@@ -2,7 +2,7 @@ from pyvirtualdisplay.display import Display
 import Image
 import ImageChops
 import logging
-import pyscreenshot
+#import pyscreenshot
 import time
 
 
@@ -33,10 +33,11 @@ class SmartDisplay(Display):
         return None # no contents
 
     def grab(self, autocrop=True):
-        img=pyscreenshot.grab()
-        if autocrop:
-            img = self.autocrop(img)
-        return img
+        pass
+        #img=pyscreenshot.grab()
+        #if autocrop:
+            #img = self.autocrop(img)
+        #return img
         
     def waitgrab(self, timeout=60, autocrop=True, cb_imgcheck=None):
         '''start process and create screenshot.
